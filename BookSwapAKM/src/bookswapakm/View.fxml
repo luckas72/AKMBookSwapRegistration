@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookswapakm.ViewController">
+   <children>
+      <VBox layoutX="65.0" layoutY="107.0" prefHeight="400.0" prefWidth="600.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="412.0" spacing="11.0">
+                     <children>
+                        <HBox prefHeight="18.0" prefWidth="215.0" spacing="10.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="138.0" text="First Name:" />
+                              <Label fx:id="lbFN" text="Label" textFill="#2905ff" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="138.0" text="Middle Name:" />
+                              <Label fx:id="lbMI" prefHeight="18.0" prefWidth="102.0" text="Label" textFill="#2905ff" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="138.0" text="Last Name:" />
+                              <Label fx:id="lbLN" text="Label" textFill="#2905ff" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="138.0" text="Student Id:" />
+                              <Label fx:id="lbID" text="Label" textFill="#2905ff" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox spacing="4.0">
+                     <children>
+                        <Button fx:id="btModFN" mnemonicParsing="false" onAction="#modifyFN" text="Modify" />
+                        <Button fx:id="btModMI" mnemonicParsing="false" onAction="#modifyMN" text="Modify" />
+                        <Button fx:id="btModLN" mnemonicParsing="false" onAction="#modifyLN" text="Modify" />
+                        <Button fx:id="btModID" mnemonicParsing="false" onAction="#modifyID" text="Modify" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="266.0" prefWidth="551.0">
+               <children>
+                  <Label text="Book Swap record" />
+                  <TableView fx:id="tvBookData" prefHeight="234.0" prefWidth="536.0">
+                    <columns>
+                      <TableColumn fx:id="tcStatus" prefWidth="75.0" text="Status" />
+                      <TableColumn fx:id="tcProvided" prefWidth="255.2000274658203" text="Provided Book" />
+                        <TableColumn fx:id="tcReceived" prefWidth="220.0" text="Received Book" />
+                    </columns>
+                  </TableView>
+               </children>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="BOTTOM_RIGHT" spacing="15.0">
+               <children>
+                  <Button fx:id="btDelete" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

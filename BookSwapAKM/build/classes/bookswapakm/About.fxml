@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="apAbout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="244.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lbAbout" alignment="TOP_CENTER" layoutX="14.0" layoutY="-8.0" prefHeight="244.0" prefWidth="390.0" text="&#10;This program is built in order to facilitate the recording of the&#10;Book Swap event in Bunker Hill Community College 2018. The&#10;program allows the administrator store, retrieve, and update &#10;the data of the participants of the event. The event was given&#10;form by the officers of Alpha Kappa Mu 2018:&#10;&#10;-Paul Moda, Advisor of the club &#10;-Cam Do, President of the club&#10;-Robert Kelly, Vice President of Scholarship&#10;-Niki Nguyen, Vice President of Service&#10;-Maximo Pimentel, Vice President of Fellowship&#10;-Luckas(YingHong) Huang, Vice President of Leadership" textFill="#5125d5" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

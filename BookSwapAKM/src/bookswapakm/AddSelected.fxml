@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="524.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="bookswapakm.AddSelectedController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="162.0" prefWidth="474.0" spacing="10.0">
+               <children>
+                  <VBox spacing="15.0">
+                     <children>
+                        <Label fx:id="lbFN" text="Label" />
+                        <Label fx:id="lbMI" text="Label" />
+                        <Label fx:id="lbLN" text="Label" />
+                        <Label fx:id="lbStuID" text="Label" />
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox spacing="5.0">
+                     <children>
+                        <Label text="Method" />
+                        <HBox spacing="10.0">
+                           <children>
+                              <RadioButton fx:id="rdSwap" mnemonicParsing="false" text="Swap" />
+                              <RadioButton fx:id="rdDonate" mnemonicParsing="false" text="Donate" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label text="Provided Book:" />
+            <TextField fx:id="tfPBook" />
+            <Label text="Received Book:" />
+            <TextField fx:id="tfRBook" />
+            <Button fx:id="btSubmit" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="26.0" prefWidth="77.0" text="Submit">
+               <VBox.margin>
+                  <Insets left="400.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
